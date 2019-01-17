@@ -1,6 +1,6 @@
-# nodejs-oauth
+# nodejs-auth0
 
-Node.js oauth Examples
+Node.js auth0 Examples
 
 ## references
 

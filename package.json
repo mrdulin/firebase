@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-oauth",
+  "name": "nodejs-auth0",
   "version": "1.0.0",
-  "description": "Node.js oauth Examples",
+  "description": "Node.js Auth0 Examples",
   "main": "index.js",
   "dependencies": {
     "express": "^4.16.4",
@@ -26,13 +26,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrdulin/nodejs-oauth.git"
+    "url": "git+https://github.com/mrdulin/nodejs-auth0.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mrdulin/nodejs-oauth/issues"
+    "url": "https://github.com/mrdulin/nodejs-auth0/issues"
   },
-  "homepage": "https://github.com/mrdulin/nodejs-oauth#readme"
+  "homepage": "https://github.com/mrdulin/nodejs-auth0#readme"
 }
