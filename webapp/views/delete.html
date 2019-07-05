@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Delete file from cloud storage</title>
+  </head>
+  <body>
+    <button id="delete" type="button">delete</button>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-storage.js"></script>
+    <script src="../scripts/initialize.js"></script>
+    <script>
+      (function(firebase) {
+        const deleteButtonElement = document.getElementById('delete');
+        deleteButtonElement.addEventListener('click', handleDelete, false);
+
+        function handleDelete() {
+          const storageRef = firebase.storage().ref();
+          const ref = storageRef.child(`images/trace-without-dataloader.png`);
+          ref
+            .delete()
+            .then(() => {
+              console.log('File deleted successfully');
+            })
+            .catch(error => {
+              console.error('File deleted error');
+              console.log(error);
+            });
+        }
+      })(firebase);
+    </script>
+  </body>
+</html>
