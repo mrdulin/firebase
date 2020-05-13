@@ -1,0 +1,29 @@
+{
+  "name": "firebase-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrdulin/firebase-js.git"
+  },
+  "keywords": [],
+  "author": "mrdulin <novaline.dulin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrdulin/firebase-js/issues"
+  },
+  "homepage": "https://github.com/mrdulin/firebase-js#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.5.4",
+    "ts-jest": "^25.5.1",
+    "typescript": "^3.9.2"
+  },
+  "dependencies": {
+    "firebase": "^7.4.0"
+  }
+}
