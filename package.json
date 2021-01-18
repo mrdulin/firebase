@@ -4,7 +4,8 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:cjs": "ts-node -O '{\"module\":\"commonjs\"}' node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -19,11 +20,16 @@
   "homepage": "https://github.com/mrdulin/firebase-js#readme",
   "devDependencies": {
     "@types/jest": "^25.2.1",
+    "firebase-functions-test": "^0.2.3",
     "jest": "^25.5.4",
+    "rewire": "^5.0.0",
     "ts-jest": "^25.5.1",
+    "ts-node": "^9.1.1",
     "typescript": "^3.9.2"
   },
   "dependencies": {
-    "firebase": "^7.4.0"
+    "firebase": "^7.4.0",
+    "firebase-admin": "^9.4.2",
+    "firebase-functions": "^3.13.1"
   }
 }
